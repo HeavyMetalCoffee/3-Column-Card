@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0, 0%, 95%);
+}
+
+.container {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cards {
+    width: 320px;
+    height: 500px;
+    padding: 5% 2% 0 5%;
+}
+
+#sedans {
+    background: hsl(31, 77%, 53%);
+    border-radius: 10px 0 0 10px;
+}
+
+#suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    padding: 10% 0 10% 0;
+
+}
+
+.blurb {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, .75);
+    text-align: left;
+    line-height: 1.6;
+    padding-bottom: 25%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-sedan {
+    background: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 53%);
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.button-sedan:hover {
+    background: hsl(31, 77%, 53%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px;
+}
+
+.button-suv {
+    background: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.button-suv:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px;
+}
+
+.button-luxury {
+    background: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.button-luxury:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px;
+}
+
+.footer {
+    display: grid;
+    justify-content: center;
+}
+
+.challenge-info {
+    font-size: 20px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 375px;
+        height: auto;
+        display: block;
+    }
+
+    #sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
